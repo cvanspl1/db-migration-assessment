@@ -34,7 +34,7 @@ Upon succesful execution of the code, a `report.csv` file will be generated in t
 - `added_after_migration`: A 'true' in this column indicates that the record was added after the migration was complete (does not exist in pre-migration database)
 - `lost_during_migration`: A 'true' in this column indicates that the record was lost during migration (does not exist in post-migration database)
 
-The report should be opened with Microsoft Excel, Google Sheets, or some other spreadsheet application. Each column can be filtered for 'T' so that action can be taken to correct all corrupted data in the post-migration database.
+The report should be opened with Microsoft Excel, Google Sheets, or some other spreadsheet application. Each column can be filtered for 'true' so that action can be taken to correct all corrupted data in the post-migration database.
 
 # Testing the Code
 
