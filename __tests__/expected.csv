@@ -1,0 +1,13 @@
+pre_migration_id,post_migration_id,name_corrupted,email_corrupted,added_after_migration,lost_during_migration
+id1,id1,false,true,false,false
+id2,id2,true,false,false,false
+id3,id3,false,false,false,false
+id4,,,,false,true
+id5,id5,true,true,false,false
+id6,id6,false,true,false,false
+id7,id7,true,false,false,false
+id8,,,,false,true
+id9,id9,false,true,false,false
+id10,id10,false,false,false,false
+,id11,,,true,false
+,id12,,,true,false
