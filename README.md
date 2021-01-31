@@ -27,7 +27,7 @@ sudo docker run -p 5433:5432 guaranteedrate/homework-post-migration:1607545060-a
 
 Upon succesful execution of the code, a `report.csv` file will be generated in the top level directory of your local repo. The report includes the following columns:
 
-- `pre_migration_id`: The ID of the account record in the pre-migration database (if it exists in the pre-migration database)	post_migration_id
+- `pre_migration_id`: The ID of the account record in the pre-migration database (if it exists in the pre-migration database)
 - `post_migration_id`: The ID of the account record in the post-migration database (if it exists in the post-migration database)
 - `name_corrupted`: A 'true' in this column indicates that the name field was corrupted during migration for the specified account ID.
 - `email_corrupted`: A 'true' in this column indicates that the email field was corrupted during migration for the specified account ID.	
