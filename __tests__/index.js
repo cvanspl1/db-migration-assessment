@@ -9,7 +9,7 @@ const actualData = [];
 const checkLostDuringMigration = () => {
   let testCase = {
     testCase: 'TEST 5',
-    description: 'The actual report accurately identifies records that were lost during the migration process.',
+    description: 'The report accurately identifies records that were lost during the migration process.',
     status: true
   };
   for(let i = 0; i < actualData.length; i++) {
@@ -21,7 +21,7 @@ const checkLostDuringMigration = () => {
 const checkAddedAfterMigration = () => {
   let testCase = {
     testCase: 'TEST 4',
-    description: 'The actual report accurately identifies records that were added after the migration was complete.',
+    description: 'The report accurately identifies records that were added after the migration was complete.',
     status: true
   };
   for(let i = 0; i < actualData.length; i++) {
@@ -33,7 +33,7 @@ const checkAddedAfterMigration = () => {
 const checkEmailCorrupted = () => {
   let testCase = {
     testCase: 'TEST 3',
-    description: 'The actual report accurately identifies records whose "email" field was corrupted during migration.',
+    description: 'The report accurately identifies records whose "email" field was corrupted during migration.',
     status: true
   };
   for(let i = 0; i < actualData.length; i++) {
@@ -45,7 +45,7 @@ const checkEmailCorrupted = () => {
 const checkNameCorrupted = () => {
   let testCase = {
     testCase: 'TEST 2',
-    description: 'The actual report accurately identifies records whose "name" field was corrupted during migration.',
+    description: 'The report accurately identifies records whose "name" field was corrupted during migration.',
     status: true
   };
   for(let i = 0; i < actualData.length; i++) {
@@ -57,7 +57,7 @@ const checkNameCorrupted = () => {
 const checkReportLengths = () => {
   let testCase = {
     testCase: 'TEST 1',
-    description: 'The actual report contains all records from both databases.',
+    description: 'The report contains all records from both databases.',
   };
   testCase.status = actualData.length === expectedData.length;
   return testCase;
