@@ -1,7 +1,19 @@
 const { Pool } = require('pg');
+require('dotenv').config();
 
-let ORIGINAL_URI = 'postgresql://old:hehehe@localhost:5432/old';
-let MIGRATED_URI = 'postgresql://new:hahaha@localhost:5433/new';
+let ORIGINAL_URI = '';
+let MIGRATED_URI = '';
+
+// Use seperate databases for development and test mode
+if (process.env.NODE_ENV === 'test') {
+  console.log('TEST MODE');
+  ORIGINAL_URI = process.env.ORIGINAL_URI_TEST;
+  MIGRATED_URI = process.env.MIGRATED_URI_TEST;
+} else {
+  console.log('DEVELOPMENT MODE');
+  ORIGINAL_URI = process.env.ORIGINAL_URI_DEV;
+  MIGRATED_URI = process.env.MIGRATED_URI_DEV;
+}
 
 // create a new pool for each DB using the connection strings above
 const originalPool = new Pool({
